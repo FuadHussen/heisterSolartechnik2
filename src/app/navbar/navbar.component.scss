@@ -1,0 +1,47 @@
+// Definieren Sie ein Mixin für flexbox-Eigenschaften
+@mixin flex-center {
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+}
+
+
+
+#menu {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative;  // Sicherstellen, dass die Position relativ ist, falls benötigt
+    z-index: 1000; 
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 8px;
+
+    >div>img {
+        height: 64px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+    &:hover{
+        color: rgb(190, 190, 190);
+        transition: 0.25s;
+    }
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    >li{
+        list-style-type: none;
+    }
+}
