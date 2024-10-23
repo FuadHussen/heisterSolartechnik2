@@ -1,0 +1,113 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin a-tag {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: 300;
+    height: 256px;
+    padding: 32px;
+
+    >div {
+        @include flex-center;
+        gap: 64px;
+        align-items: flex-start;
+    }
+
+    >div {
+        font-size: 14px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+
+    p, a{
+        font-size: 15px;
+    }
+}
+
+.footerEnd {
+    font-size: 14px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 16px;
+}
+
+a {
+    @include a-tag();
+}
+
+.links-container {
+    display: flex;
+    gap: 64px;
+}
+
+.important-links,
+.important-links-last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.important-links {
+    align-items: flex-start;
+}
+
+.important-links-last-child {
+    align-items: flex-start;
+}
+
+.imprint-part {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+
+    >div:nth-child(2) {
+        display: flex;
+        gap: 16px;
+    }
+
+    >p {
+        font-weight: 300;
+    }
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.faAt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faAtFlex{
+    display: flex;
+    align-items: center;
+}
+
+p{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+}
