@@ -7,6 +7,9 @@ import { VertrauenswuerdigerPartnerComponent } from "./vertrauenswuerdiger-partn
 import { WirKoennenHelfenComponent } from './wir-koennen-helfen/wir-koennen-helfen.component';
 import { WarumHeisterComponent } from './warum-heister/warum-heister.component';
 import { UnserSolarComponent } from './unser-solar/unser-solar.component';
+import { RechnerComponent } from './rechner/rechner.component';
+import { FunktionPVComponent } from './funktion-pv/funktion-pv.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -18,7 +21,9 @@ import { UnserSolarComponent } from './unser-solar/unser-solar.component';
     VertrauenswuerdigerPartnerComponent,
     WirKoennenHelfenComponent,
     WarumHeisterComponent,
-    UnserSolarComponent
+    UnserSolarComponent,
+    RechnerComponent,
+    FunktionPVComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
