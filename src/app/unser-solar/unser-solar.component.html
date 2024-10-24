@@ -1,0 +1,51 @@
+<div class="premium-solar-container">
+  <h1>Unsere Premium Solartechnik</h1>
+  <p>
+    Mit Heister Solartechnik setzen Sie auf Premium-Solarmodule, die durch
+    höchste Energieeffizienz auf begrenzten Dachflächen beeindrucken. Zwar
+    benötigen sie etwas länger zur Amortisation, doch dank ihrer erstklassigen
+    Qualität verdienen sie Ihnen noch Jahrzehnte nach der Amortisation Geld.
+    Investieren Sie heute in die Sonnenenergie von morgen.
+  </p>
+  <div class="buttons">
+    <button
+      class="button-17"
+      (click)="showProduct(0)"
+      [ngStyle]="getActiveButtonStyle(0)"
+    >
+      Preis-Leistungs-Sieger
+    </button>
+    <button
+      class="button-17"
+      (click)="showProduct(1)"
+      [ngStyle]="getActiveButtonStyle(1)"
+    >
+      Effizienz-Sieger
+    </button>
+  </div>
+  <div class="product-info">
+    <div class="product-details">
+      <h1>
+        {{ currentProduct.title }} <b>{{ currentProduct.power }}</b>
+      </h1>
+      <p>{{ currentProduct.description }}</p>
+      <hr />
+      <p class="small-title">{{ currentProduct.smallTitle }}</p>
+      <p>{{ currentProduct.smallText }}</p>
+      <ul>
+        <li *ngFor="let feature of currentProduct.features">{{ feature }}</li>
+      </ul>
+      <a [href]="getProductDataSheet()" target="_blank" class="button-17">Datenblatt</a>
+    </div>
+    <div class="product-image">
+      <img
+        [src]="
+          currentProduct.title === 'Mono S4 Halfcut'
+            ? 'assets/mono-s4.png'
+            : 'assets/neostar-2s.jpeg'
+        "
+        alt="Solar Panel"
+      />
+    </div>
+  </div>
+</div>
