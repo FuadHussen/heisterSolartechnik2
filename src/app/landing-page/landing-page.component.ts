@@ -8,5 +8,21 @@ import { Component } from '@angular/core';
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent {
+  animateSpacer = false;
+  animateText = false;
+  animateButtons = false;
 
+  ngOnInit() {
+    setTimeout(() => {
+      this.animateSpacer = true;
+    }, 500); 
+
+    setTimeout(() => {
+      this.animateText = true;
+    }, 1000); 
+
+    setTimeout(() => {
+      this.animateButtons = true;
+    }, 1500); 
+  }
 }

@@ -1,0 +1,40 @@
+<div class="warum-heister">
+  <div class="content">
+    <img
+      src="./../../assets/cropped-favicon-heister-solartechnik.png"
+      alt="Logo"
+      class="logo"
+    />
+    <div class="text">
+      <h1>Warum Heister Solartechnik GmbH?</h1>
+      <p>
+        Setzen Sie auf Heister Solartechnik GmbH für eine zukunftsorientierte,
+        qualitätsbewusste und nachhaltige Solartechnik in Köln.
+      </p>
+      <ul class="premium-bullet-list-box">
+        <li *ngFor="let item of information" #listItem class="premium-bullet-list-content">
+          <div class="premium-bullet-list-text">
+            <div class="premium-bullet-list-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet" class="icon">
+                <defs><clipPath id="__lottie_element_2"><rect width="200" height="200" x="0" y="0"></rect></clipPath></defs>
+                <g clip-path="url(#__lottie_element_2)">
+                  <g transform="matrix(9.2833,0,0,9.2833,25.7334,25.7334)" opacity="1" style="display: block;">
+                    <g opacity="1" transform="matrix(1,0,0,1,8,8)">
+                      <path fill="rgb(0,0,0)" fill-opacity="1" d="M0,-7.5 C-4.141,-7.5 -7.5,-4.141 -7.5,0 C-7.5,4.141 -4.141,7.5 0,7.5 C4.141,7.5 7.5,4.141 7.5,0 C7.5,-4.141 4.141,-7.5 0,-7.5z"></path>
+                    </g>
+                  </g>
+                  <g transform="matrix(0.67358,0,0,0.67358,100,100)" opacity="1" style="display: block;">
+                    <g opacity="1" transform="matrix(1,0,0,1,-2.5,-0.75)">
+                      <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="20" d="M-62.557,-7.074 C-62.557,-7.074 -18.542,38.058 -18.542,38.058 C-18.542,38.058 64.039,-43.702 67.746,-47.373"></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <span><strong>{{ item.title }}:</strong> {{ item.text }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

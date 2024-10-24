@@ -5,6 +5,15 @@ img {
 
 .text-content {
     padding: 128px 0 128px 256px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+
+    &.slide-in {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .container {
@@ -32,16 +41,23 @@ h1 {
     position: absolute;
     left: 124px;
     margin-top: 64px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+
+    &.slide-in {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .svg-container path {
     stroke: black; 
     stroke-width: .5; 
-    fill: transparent; 
+    fill: white; 
     stroke-dasharray: 10000; 
     stroke-dashoffset: 10000;
-    transition: stroke-dashoffset 10s; 
-    
+    transition: stroke-dashoffset 15s;     
 }
 
 .svg-container.animate path {

@@ -8,21 +8,18 @@ import { Component, HostListener } from '@angular/core';
   styleUrl: './vertrauenswuerdiger-partner.component.scss'
 })
 export class VertrauenswuerdigerPartnerComponent {
-  isAnimated: boolean = false; // Initialer Status
+  isAnimated: boolean = false; 
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const h1Element = document.querySelector('h1'); // Das h1-Element auswählen
+    const h1Element = document.querySelector('h1'); 
     if (h1Element) {
-      const h1Position = h1Element.getBoundingClientRect().top; // Position des h1-Elements
+      const h1Position = h1Element.getBoundingClientRect().top; 
       const windowHeight = window.innerHeight;
 
-      // Überprüfen, ob das h1-Element sichtbar ist
       if (h1Position < windowHeight && h1Position > 0) {
-        this.isAnimated = true; // Animation starten
-      } else {
-        this.isAnimated = false; // Animation zurücksetzen, wenn nicht sichtbar
-      }
+        this.isAnimated = true;
+      } 
     }
   }
 }

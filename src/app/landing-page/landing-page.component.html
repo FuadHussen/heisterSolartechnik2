@@ -2,17 +2,17 @@
   <div class="image-container">
     <img src="./../../assets/youtube-video-gif.gif" alt="" />
     <div class="text-overlay">
-        <div class="spacer" style="height: 50px;">
-            <hr>
-        </div>
-      <h2>Heister Solartechnik GmbH - Ihr Experte für Photovoltaik in Köln</h2>
-      <h4>Exzellenz in Qualität und Service</h4>
+      <div class="spacer" [class.animate]="animateSpacer">
+        <div class="horizontal-line"></div>
+        <div class="vertical-line left"></div>
+        <div class="vertical-line right"></div>
+      </div>
+      <h2 [class.animate]="animateText">Heister Solartechnik GmbH - Ihr Experte für Photovoltaik in Köln</h2>
+      <h4 [class.animate]="animateText">Exzellenz in Qualität und Service</h4>
       <div>
-        <button class="button-17">Leistungen</button>
-        <button class="button-17">Kontakt</button>
+        <button class="button-17 left" [class.animate]="animateButtons">Leistungen</button>
+        <button class="button-17 right" [class.animate]="animateButtons">Kontakt</button>
       </div>
     </div>
   </div>
 </section>
-
-
