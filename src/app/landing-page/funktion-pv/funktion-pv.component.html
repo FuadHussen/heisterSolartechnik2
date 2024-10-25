@@ -1,0 +1,18 @@
+<div class="elementor-container">
+  <div class="elementor-inner">
+    <h1 class="elementor-heading">Wie funktionieren Photovoltaikanlagen?</h1>
+    <p class="elementor-text">Solarenergie schont die Umwelt und hilft Ihnen, Energiekosten zu sparen. Doch wie funktioniert die Photovoltaik Stromerzeugung eigentlich?</p>
+    
+    <div class="elementor-content">
+      <div class="elementor-image-container">
+        <img src="./../../assets/pv-funktion.png" alt="Diagramm einer Photovoltaikanlage" class="elementor-image">
+      </div>
+      
+      <div class="elementor-description">
+        <div class="text-overlay" *ngFor="let item of pvData; let i = index" [ngClass]="getClass(i)">
+          <p><strong>{{item.title}}:</strong> {{item.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

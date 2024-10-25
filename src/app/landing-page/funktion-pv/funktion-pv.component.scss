@@ -1,0 +1,113 @@
+.pv-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.pv-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pv-image {
+  max-width: 50%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.pv-description {
+  max-width: 50%;
+  text-align: left;
+}
+
+h1 {
+  color: black;
+  font-size: 32px!important;
+  font-weight: 400;
+}
+
+p {
+  color: #7A7A7A;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.elementor-container {
+  text-align: center;
+  padding: 128px;
+  background-color: #F8F8F8;
+}
+
+.elementor-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.elementor-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.elementor-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.elementor-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.elementor-image-container {
+  flex: 1;
+  margin-right: 100px;
+}
+
+.elementor-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.elementor-description {
+  flex: 1;
+  text-align: left;
+}
+
+.text-overlay {
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+.sun {
+    position: relative;
+    right: 100px;   
+}
+
+.panels {
+    position: relative;
+    right: 75px;
+}
+
+.lightning {
+    position: relative;
+    right: 50px;
+}
+
+.cable {
+    position: relative;
+    right: 50px;
+}
+
+.battery {
+    position: relative;
+    right: 75px;
+}
+
+.pole {
+    position: relative;
+    right: 100px;
+}

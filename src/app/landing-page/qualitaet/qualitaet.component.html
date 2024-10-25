@@ -1,0 +1,12 @@
+<div class="qualitaet-container">
+  <div class="qualitaet">
+    <div [ngClass]="{'slideInFromLeft': isAnimated}">
+      <h1>{{ quality.title }}</h1>
+      <p>{{ quality.description }}</p>
+    </div>
+    <div class="image-overlay" [ngClass]="{'slideInFromRight': isAnimated}">
+      <p>{{ quality.overlayDescription }}</p>
+      <button class="button-17">{{ quality.buttonText }}</button>
+    </div>
+  </div>
+</div>
