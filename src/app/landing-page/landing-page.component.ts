@@ -1,9 +1,26 @@
 import { Component } from '@angular/core';
+import { VertrauenswuerdigerPartnerComponent } from './vertrauenswuerdiger-partner/vertrauenswuerdiger-partner.component';
+import { WirKoennenHelfenComponent } from './wir-koennen-helfen/wir-koennen-helfen.component';
+import { WarumHeisterComponent } from './warum-heister/warum-heister.component';
+import { UnserSolarComponent } from './unser-solar/unser-solar.component';
+import { RechnerComponent } from './rechner/rechner.component';
+import { FunktionPVComponent } from './funktion-pv/funktion-pv.component';
+import { QualitaetComponent } from './qualitaet/qualitaet.component';
+import { StellenanzeigeComponent } from './stellenanzeige/stellenanzeige.component';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [],
+  imports: [
+    VertrauenswuerdigerPartnerComponent,
+    WirKoennenHelfenComponent,
+    WarumHeisterComponent,
+    UnserSolarComponent,
+    RechnerComponent,
+    FunktionPVComponent,
+    QualitaetComponent,
+    StellenanzeigeComponent
+  ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })
