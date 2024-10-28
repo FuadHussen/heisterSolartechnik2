@@ -1,0 +1,50 @@
+<app-header></app-header>
+<div
+  *ngFor="let item of [item01, item02, item03, item04, item05]; let i = index"
+  class="service-section"
+  [ngClass]="{ reverse: item.reverse }"
+  [attr.data-number]="'0' + (i + 1)"
+>
+  <div
+    *ngIf="i > 0"
+    class="svg-container"
+    [ngClass]="{ light: i % 2 === 0, dark: i % 2 !== 0 }"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 700 10"
+      preserveAspectRatio="none"
+    >
+      <path class="elementor-shape-fill" d="M350,10L340,0h20L350,10z"></path>
+    </svg>
+  </div>
+  <div class="text-content">
+    <h1>{{ item.title }}</h1>
+    <ul>
+      <li
+        *ngFor="let desc of item.descriptions; let i = index"
+        [style.--li-index]="i"
+      >
+        <span class="svg-icon" [innerHTML]="sanitizeSvg(item.svg)"></span>
+        <span [innerHTML]="desc"></span>
+      </li>
+    </ul>
+  </div>
+  <div
+    class="image-content"
+    [ngClass]="{ 'last-image': i === 4 }"
+    [attr.data-number]="'0' + (i + 1)"
+  >
+    <img [src]="item.imageUrl" alt="{{ item.title }}" />
+  </div>
+</div>
+
+<div class="contact-section">
+  <p>
+    Bei <b>Heister Solartechnik GmbH</b> setzen wir auf
+    zukunftsweisende Technologien, um Ihnen nachhaltige und wirtschaftliche
+    Energielösungen zu bieten. Kontaktieren Sie uns und lassen Sie sich von
+    unseren Experten beraten!
+  </p>
+</div>
+<app-vorgehensweise></app-vorgehensweise>
