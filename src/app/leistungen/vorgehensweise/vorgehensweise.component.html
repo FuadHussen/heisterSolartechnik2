@@ -1,1 +1,13 @@
-<p>vorgehensweise works!</p>
+<div class="vorgehensweise-section">
+    <h1>Ihre Solaranlage in Köln - Vorgehensweise</h1>
+    <p>Der persönliche Weg</p>
+    <div *ngFor="let step of steps" class="step">
+        <div class="step-icon">
+            <i [ngClass]="step.icon"></i>
+        </div>
+        <div class="step-content">
+            <h3>{{ step.title }}</h3>
+            <p>{{ step.description }}</p>
+        </div>
+    </div>
+</div>

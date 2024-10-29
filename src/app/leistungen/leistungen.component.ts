@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { HeaderComponent } from "../ueber-uns/header/header.component";
 import { VorgehensweiseComponent } from "./vorgehensweise/vorgehensweise.component";
+import { BeratungComponent } from "./beratung/beratung.component";
+
 @Component({
   selector: 'app-leistungen',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, VorgehensweiseComponent],
+  imports: [CommonModule, HeaderComponent, VorgehensweiseComponent, BeratungComponent],
   templateUrl: './leistungen.component.html',
   styleUrl: './leistungen.component.scss'
 })

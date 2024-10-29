@@ -1,0 +1,12 @@
+<div class="beratung-section">
+    <h1>Kostenlose Beratung & individuelles Angebot</h1>
+
+    <ng-container *ngFor="let item of description">
+        <div class="item-container">
+            <div [innerHTML]="getSafeHtml(item.svg)" class="svg-icon"></div>
+            <div [innerHTML]="getSafeHtml(item.description)" class="description"></div>
+        </div>
+    </ng-container>
+
+    <button class="button-17">Jetzt Kontakt aufnehmen</button>
+</div>
