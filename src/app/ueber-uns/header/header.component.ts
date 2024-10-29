@@ -19,8 +19,9 @@ export class HeaderComponent implements OnInit {
         const scrollFraction = window.scrollY / maxScroll;
         const minWidth = 10;
         const maxWidth = 30;
+        const decrement = -50;    
 
-        const newWidth = maxWidth - (maxWidth - minWidth) * scrollFraction;
+        const newWidth = maxWidth - (maxWidth - minWidth - decrement) * scrollFraction;
         this.renderer.setStyle(spacer, 'width', `${newWidth}%`);
       }
     });
