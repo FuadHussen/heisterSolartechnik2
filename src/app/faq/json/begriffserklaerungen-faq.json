@@ -1,0 +1,25 @@
+{
+    "title": "Begriffserklärungen",
+    "questions": [
+      {
+        "question": "Was bedeutet kWp?",
+        "answer": "kWp (Kilowattpeak) steht für die Spitzenleistung einer Photovoltaikanlage unter idealen Bedingungen, also bei optimaler Sonneneinstrahlung und Ausrichtung. In Deutschland generiert eine Anlage mit beispielsweise 8 kWp aufgrund der durchschnittlichen Globalstrahlung von etwa 1000-1100 kWh pro Quadratmeter und Jahr rund 8000-8800 kWh pro Jahr. Dabei sind Verlustfaktoren wie Ausrichtung und Verschattung zu beachten, die die tatsächliche Leistung negativ beeinflussen."
+      },
+      {
+        "question": "Was bedeutet kWh im Kontext eines Akkus?",
+        "answer": "kWh (Kilowattstunden) im Kontext eines Akkus bezieht sich auf die Speicherkapazität des Akkus, also wie viel Energie er speichern und über einen bestimmten Zeitraum abgeben kann. Ein 10 kWh Akku kann beispielsweise bei voller Ladung 10 Stunden lang 1 kW Energie liefern. Diese Kapazität ist entscheidend, um zu bestimmen, wie viel Energie über Nacht oder während sonnenarmer Perioden verfügbar ist."
+      },
+      {
+        "question": "Was ist Globalstrahlung?",
+        "answer": "Globalstrahlung bezeichnet die gesamte Sonnenenergie, die pro Jahr auf eine bestimmte Fläche (Quadratmeter) trifft. Sie besteht aus Direkteinstrahlung, also direktem Sonnenlicht, und Diffusstrahlung, die durch Wolken und Atmosphäre gestreut wird. In Nordrhein-Westfalen liegt die durchschnittliche Globalstrahlung bei etwa 1000 bis 1100 kWh pro Quadratmeter und Jahr, wobei sie 2020 in Köln sogar knapp über 1200 kWh erreichte.<br>"
+      },
+      {
+        "question": "Was bedeutet Inselbetrieb?",
+        "answer": "Inselbetrieb steht für die Fähigkeit einer Photovoltaikanlage, auch bei einem Ausfall des öffentlichen Stromnetzes weiterhin Energie zu liefern. Diese Autonomie erfordert eine vollständige physische Trennung von der allgemeinen Stromversorgung, um die Sicherheit bei Netzreparaturen zu gewährleisten. Solche autarken Systeme benötigen spezielle Hardware und aufwendigere Installationen, was sich in höheren Kosten niederschlägt, aber im Gegenzug eine kontinuierliche Energieversorgung auch in Notfällen ermöglicht."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen Notstromfähigkeit und Inselbetrieb?",
+        "answer": "Notstromfähigkeit bezieht sich auf die Fähigkeit eines Akkus, bei einem Stromausfall kritische Verbraucher wie Kühlschränke und Gefriertruhen mit Energie zu versorgen. Im Gegensatz zum Inselbetrieb wird nicht das gesamte Hausnetz mit Strom versorgt, und die PV-Anlage produziert im Falle eines Stromausfalls keinen Strom mehr."
+      }
+    ]
+  }

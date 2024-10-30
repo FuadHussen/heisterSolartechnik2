@@ -1,0 +1,41 @@
+{
+  "title": "Allgemeine Fragen",
+  "questions": [
+    {
+      "question": "Wie realistisch sind Ertragsprognosen?",
+      "answer": "Die Genauigkeit von Ertragsprognosen hängt maßgeblich von der Qualität der eingesetzten Simulationstools und insbesondere von der Präzision der Schattenmodellierung ab. Viele Tools benötigen umfangreiche Zeit für die Modellierung der Umgebung und Verschattungssituation, was oft zu optimistischen Prognosen führt. Bei Heister Solartechnik GmbH setzen wir auf Aurora Solar, eine innovative Software, die Satellitendaten, Lidar-Daten und KI nutzt, um ein exaktes 3D-Modell der Umgebung zu erstellen. Dies ermöglicht uns, realistische Verschattungssimulationen und damit präzise Ertragsprognosen zu liefern, die die tatsächlichen Gegebenheiten vor Ort berücksichtigen."
+    },
+    {
+      "question": "Wie realistisch sind Rentabilitätsprognosen?",
+      "answer": "Rentabilitätsprognosen basieren auf verschiedenen Faktoren: der Genauigkeit der Ertragsprognosen, dem erwarteten zukünftigen Stromverbrauch, der prognostizierten Strompreiserhöhung und der angenommenen Lebensdauer der Anlage. In Deutschland ist der durchschnittliche Strompreis zwischen 2000 und 2021 um durchschnittlich 6,1% pro Jahr gestiegen, ein wichtiger Faktor, der in Rentabilitätsberechnungen einfließen sollte. Wir bei Heister Solartechnik GmbH verwenden konservative Annahmen von 4% durchschnittlicher Preiserhöhung in unseren Prognosen, um realistische Erwartungen zu setzen und unsere Prognosen häufig zu übertreffen."
+    },
+    {
+      "question": "Einsparpotential einer Solaranlage?",
+      "answer": "Das Einsparpotential einer Solaranlage ist individuell und abhängig von verschiedenen Faktoren: den Gestehungskosten des produzierten Stroms, dem eigenen Stromverbrauch, dem Stromnutzungsprofil und der Lebensdauer der Anlage. Die Gestehungskosten variieren je nach Anlagengröße, Qualität der Komponenten und weiteren Faktoren. Das individuelle Einsparpotential ergibt sich aus dem Vergleich der Gestehungskosten mit dem aktuellen Strompreis und dem zukünftigen Stromverbrauch, der durch zusätzliche Verbraucher wie Wärmepumpen und Elektroautos beeinflusst werden kann. Der Strompreis in Deutschland ist zwischen 2000 und 2021 um durchschnittlich 6,1% pro Jahr gestiegen, ein wichtiger Aspekt bei der Berechnung des Einsparpotentials."
+    },
+    {
+      "question": "Wie stark beeinflusst die Ausrichtung und Neigung meines Daches das Potenzial/die Effizienz meiner Anlage?",
+      "answer": "Die Ausrichtung und Neigung des Daches spielen eine entscheidende Rolle für die Effizienz einer Solaranlage. In NRW ist beispielsweise eine Südausrichtung mit einer Neigung von etwa 30 Grad optimal. Abweichungen von dieser Idealposition können zu geringeren Erträgen führen. Die Einstrahlungsscheibe verdeutlicht, wie unterschiedliche Ausrichtungen und Neigungen den Ertrag beeinflussen. Wie auf der Einstrahlungsscheibe ersichtlich, sind die Mindererträge oft geringer als zunächst angenommen. (Bild oder Alternativ Link einfügen)"
+    },
+    {
+      "question": "Voraussetzungen für Dachinstallation?",
+      "answer": "Für die Installation einer Solaranlage müssen bestimmte Voraussetzungen erfüllt sein: Das Dach muss strukturell stabil sein und sollte eine geeignete Größe, Ausrichtung sowie geringe Verschattung aufweisen. Bei sehr alten Dächern kann eine Sanierung erforderlich sein."
+    },
+    {
+      "question": "Erweiterung der Solaranlage?",
+      "answer": "Eine Erweiterung der Solaranlage ist möglich, jedoch ist es oft kosteneffektiver, von Anfang an eine größere Anlage zu installieren. Dies liegt an den Fixkosten, die mit jeder Installation verbunden sind, wie zum Beispiel Gerüstbau, AC-Installation und Planung. Eine sorgfältige Planung im Voraus kann langfristig Kosten sparen."
+    },
+    {
+      "question": "Spezielle Versicherung für PV-Anlagen?",
+      "answer": "Eine spezielle Versicherung für PV-Anlagen ist in der Regel nicht notwendig, da diese meistens durch die normale Gebäudeversicherung abgedeckt werden können. Es ist jedoch ratsam, dies mit der Versicherungsgesellschaft abzuklären und sicherzustellen. Die Preise für diese Versicherungen beginnen in der Regel bei etwa 60€ pro Jahr."
+    },
+    {
+      "question": "Kann ich mit meiner PV-Anlage ein Elektroauto laden?",
+      "answer": "Ja, das Laden eines Elektroautos mit einer PV-Anlage ist möglich und effizient. Dies kann über Wallboxen realisiert werden. Für besonders effizientes Laden ist es empfehlenswert, darauf zu achten, dass sowohl die Wallbox als auch der Wechselrichter die Funktion des sogenannten Überschussladens beherrschen. Diese Funktion ermöglicht es, das Auto nicht nur mit den standardmäßigen 11 kW zu laden, sondern mit der Strommenge, die gerade von der Photovoltaikanlage produziert wird (abzüglich des aktuellen Strombedarfs des Hauses). Wichtig ist, dass die Software von Wechselrichter und Wallbox kompatibel ist, um intelligentes Überschussladen zu gewährleisten."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen einem Wechselrichter und einem Hybridwechselrichter?",
+      "answer": "Ein Wechselrichter ist ein essenzieller Bestandteil einer Photovoltaikanlage, der den von den Solarmodulen erzeugten Gleichstrom (DC) in Wechselstrom (AC) umwandelt, der dann im Haushalt genutzt oder ins öffentliche Stromnetz eingespeist werden kann. Ein Hybridwechselrichter hingegen kombiniert die Funktionen eines herkömmlichen Wechselrichters mit der Fähigkeit, an ein Batteriespeichersystem angeschlossen zu werden. Dies ermöglicht es, den überschüssigen Solarstrom zu speichern und zu einem späteren Zeitpunkt zu nutzen, was die Effizienz der Anlage erhöht und eine größere Unabhängigkeit vom Stromnetz ermöglicht."
+    }
+  ]
+}

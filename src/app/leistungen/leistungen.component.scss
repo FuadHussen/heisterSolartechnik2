@@ -143,3 +143,14 @@ li.visible {
     font-weight: 400;
   }
 }
+
+.container > h2 {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+}
+

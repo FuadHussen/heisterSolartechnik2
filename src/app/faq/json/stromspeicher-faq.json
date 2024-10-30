@@ -1,0 +1,25 @@
+{
+    "title": "Stromspeicher",
+    "questions": [
+      {
+        "question": "Warum ist ein Energiespeicher sinnvoll?",
+        "answer": "Ein Energiespeicher steigert die Autarkie und den Eigenverbrauch des selbst erzeugten Solarstroms und ermöglicht eine größere Unabhängigkeit von den Strompreisen des öffentlichen Netzes. Insbesondere in Zeiten, in denen keine Sonne scheint – nachts oder an bewölkten Tagen –, erlaubt der Speicher die Nutzung des zuvor gespeicherten Solarstroms. Dies erhöht den Eigenverbrauch Ihrer Solaranlage und kann zu signifikanten Kosteneinsparungen führen. Zudem existieren Förderprogramme für die Installation von Energiespeichern, die die anfänglichen Investitionskosten reduzieren können."
+      },
+      {
+        "question": "Welcher Speicher ist der richtige für mich?",
+        "answer": "Die Auswahl des passenden Energiespeichers basiert auf verschiedenen Faktoren, einschließlich der Leistung Ihrer Solaranlage und Ihres persönlichen Stromverbrauchs. Wir bieten individuelle Beratung, um den optimalen Speicher für Ihre spezifischen Bedürfnisse zu ermitteln. Dabei berücksichtigen wir Aspekte wie die benötigte Kapazität des Speichers, um Ihren Energiebedarf zu decken, und gegebenenfalls die Kompatibilität mit Ihrer bestehenden Solaranlage."
+      },
+      {
+        "question": "Nachrüstung eines Energiespeichers?",
+        "answer": "Die Nachrüstung eines Energiespeichers ist besonders für ältere Solaranlagen empfehlenswert, deren Einspeisevergütung ausläuft. Der von uns angebotene Ecoflow Ocean ist aufgrund seiner Hochvolttechnologie und des integrierten DC-DC Wandlers eine kosteneffiziente Lösung, die auch ohne den Austausch des vorhandenen Wechselrichters nachgerüstet werden kann. Dies erhöht die Unabhängigkeit und Effizienz Ihrer Solaranlage."
+      },
+      {
+        "question": "Wann ist ein Stromspeicher sinnvoll?",
+        "answer": "Die Entscheidung für einen Stromspeicher hängt von mehreren Faktoren ab, darunter Rentabilität, das Bedürfnis nach Unabhängigkeit, persönliche Präferenzen und Umweltüberlegungen. Wir setzen ausschließlich auf umweltfreundlichere LiFePO4-Zellen, die eine sichere und langlebige Speicherlösung bieten. Ein Stromspeicher ist besonders vorteilhaft, wenn Sie einen hohen Eigenverbrauch anstreben und Ihre Unabhängigkeit vom Stromnetz maximieren möchten."
+      },
+      {
+        "question": "Ist ein Stromspeicher sicher?",
+        "answer": "Die Sicherheit von Stromspeichern ist ein zentrales Anliegen. Die von uns verwendeten LiFePO4-Zellen gelten als besonders sichere Batterietechnologie. Sie bieten eine minimale Brandgefahr und sind robust gegenüber Überladung und Tiefentladung. Für maximale Sicherheit empfehlen wir die Ocean Akkus von Ecoflow, die in jedem Akkupack mit einem integrierten Feuerlöscher ausgestattet sind, um das Brandrisiko zu minimieren."
+      }
+    ]
+  }

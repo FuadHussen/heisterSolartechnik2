@@ -2,7 +2,7 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 import { FirstSectionComponent } from "./first-section/first-section.component";
 import { SecondSectionComponent } from "./second-section/second-section.component";
 import { ThirdSectionComponent } from "./third-section/third-section.component";
-import { HeaderComponent } from "./header/header.component";
+import { HeaderComponent } from "../shared/header/header.component";
 @Component({
   selector: 'app-ueber-uns',
   standalone: true,

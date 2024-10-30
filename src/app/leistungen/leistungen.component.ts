@@ -1,7 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { HeaderComponent } from "../ueber-uns/header/header.component";
+import { HeaderComponent } from "../shared/header/header.component";
 import { VorgehensweiseComponent } from "./vorgehensweise/vorgehensweise.component";
 import { BeratungComponent } from "./beratung/beratung.component";
 
@@ -13,6 +13,9 @@ import { BeratungComponent } from "./beratung/beratung.component";
   styleUrl: './leistungen.component.scss'
 })
 export class LeistungenComponent implements AfterViewInit {
+  
+  defaultTitle = 'Unsere Dienstleistungen - Ihr Weg zur Sonnenenergie';
+
   constructor(private sanitizer: DomSanitizer) { }
 
   ngAfterViewInit() {

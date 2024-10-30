@@ -1,0 +1,21 @@
+{
+    "title": "Rentabilität und Förderungen",
+    "questions": [
+      {
+        "question": "Staatliche und lokale Förderungen?",
+        "answer": "Es gibt diverse staatliche und lokale Förderprogramme zur Unterstützung der Installation von Photovoltaikanlagen. Aktuell wird die Mehrwertsteuer auf den Gesamtpreis der PV-Anlage erlassen. In Köln gibt es attraktive lokale Förderungen, die 300€/kWp für die ersten 10kWp und darüber hinaus 250€/kWp bieten, sowie 250€/kWh für Akkus, vorausgesetzt, diese verfügen über eine Herstellergarantie von mindestens 10 Jahren. Diese Förderungen variieren je nach Kommune und können einen erheblichen Einfluss auf die Gesamtkosten und die Rentabilität der Anlage haben."
+      },
+      {
+        "question": "Hauptfaktoren der Rentabilität?",
+        "answer": "Die Rentabilität einer Solaranlage wird wesentlich durch den Preis pro kWp und den eigenen aktuellen sowie zukünftigen Stromverbrauch bestimmt. Die Anlagengröße und der Installationsaufwand beeinflussen den kWp-Preis. Größere Anlagen können die Kosten pro kWp senken, während komplexere Installationen diese erhöhen können."
+      },
+      {
+        "question": "Rentabilität einer Photovoltaikanlage?",
+        "answer": "Eine Photovoltaikanlage ist trotz der geringeren Einspeisevergütung rentabel, insbesondere durch den Eigenverbrauch des erzeugten Stroms und die dadurch erzielte Reduzierung des Netzstrombedarfs. Die Amortisation der Investition hängt von verschiedenen Faktoren ab, darunter die Größe der Anlage, der zukünftige Stromverbrauch, der erwartete Strompreis sowie die Lebensdauer der PV-Anlage"
+      },
+      {
+        "question": "Faktoren des Installationsaufwands?",
+        "answer": "Der Installationsaufwand wird durch mehrere Faktoren beeinflusst, einschließlich der Zugänglichkeit des Daches, des vorhandenen Schaltschranks, der Art der Dacheindeckung und des gewählten Installationstyps, wie zum Beispiel einer Inselanlage. Diese Faktoren bestimmen den zeitlichen und arbeitstechnischen Aufwand und somit die Installationskosten."
+      }
+    ]
+  }

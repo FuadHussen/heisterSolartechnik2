@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
@@ -9,7 +9,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   templateUrl: './beratung.component.html',
   styleUrl: './beratung.component.scss'
 })
-export class BeratungComponent {
+export class BeratungComponent implements OnInit, OnDestroy {
 
   constructor(private sanitizer: DomSanitizer) { }
 
@@ -85,4 +85,23 @@ export class BeratungComponent {
       description: '<strong>Transparentes Angebot:</strong> Sie erhalten von uns ein kostenloses, unverbindliches Angebot. Dieses beinhaltet einen detaillierten Kostenvoranschlag und eine Amortisationsberechnung, damit Sie genau wissen, wann sich Ihre Investition auszahlt.'
     }
   ];
+
+  ngOnInit() {
+    window.addEventListener('scroll', this.checkVisibility.bind(this));
+  }
+
+  ngOnDestroy() {
+    window.removeEventListener('scroll', this.checkVisibility.bind(this));
+  }
+
+  checkVisibility() {
+    const content = document.querySelector('.beratung-section-content');
+    if (content) {
+        const rect = content.getBoundingClientRect();
+        const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+        if (isVisible) {
+            content.classList.add('visible');
+        }
+    }
+  }
 }

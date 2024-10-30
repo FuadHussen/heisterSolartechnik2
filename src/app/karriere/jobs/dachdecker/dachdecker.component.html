@@ -1,0 +1,36 @@
+<div class="container"> 
+    <app-header  [customImage]="customImage" [title]="title" [showSpacer]="showSpacer"></app-header>
+    <div class="content">
+    <h2>Guten Tag,<br>
+      ich bin Lennard Heister, Geschäftsführer der Heister Solartechnik GmbH
+      und ich lade dich herzlich dazu ein meinem ausgesuchten Team von Mitarbeitern beizutreten.
+    </h2>
+  
+    <h3>Das erwarten wir von dir:</h3>
+    <ul>
+      <li *ngFor="let item of description">{{ item }}</li>
+    </ul>
+  
+    <h3>Das biete ich dir:</h3>
+    <ul>
+      <li><strong>Top-Bezahlung:</strong> Wenn die Heister Solartechnik GmbH gewinnt, gewinnst auch du! Neben einem attraktiven Stundenlohn verspreche ich dir auch eine Gewinnbeteiligung und jährliche Lohnerhöhungen.</li>
+      <li><strong>Faire Überstundenvergütung</strong> – entweder mit 30% Aufschlag, oder verdoppelt als Stundenausgleich.</li>
+      <li><strong>Qualität statt Hetze:</strong> Du hast einen hohen Anspruch an deine Arbeit – ich ebenso. Deshalb räume ich dir dafür die nötige Zeit ein.</li>
+      <li><strong>Arbeitsschutz:</strong> Ich spare nicht an der Arbeitssicherheit meiner Angestellten.</li>
+      <li><strong>Teamkultur und Kollegialität</strong> sind in meinem Unternehmen kein Personalera-Geschwafel, sondern werden tatsächlich gelebt.</li>
+      <li><strong>Mitarbeiterfeedback:</strong> Du denkst gerne mit? Du hast keinen Bock auf: „Weil wir das immer so gemacht haben“? Ich höre mir deine Ideen persönlich an.</li>
+      <li><strong>Extras:</strong> Nur zufriedene Mitarbeiter sorgen für zufriedene Kunden.</li>
+      <ul>
+        <li>Wäscheservice: Deine Freizeit ist nicht dafür da deine Arbeitsklamotten zu waschen.</li>
+        <li>Kostenlose kalte und warme Getränke: Ich will, dass du dich auf der Baustelle im Sommer an kalten Getränken freuen kannst. Deshalb haben wir auf dem Transporter ein PV-Modul installiert, das den Kühlschrank im Laderaum versorgt.</li>
+        <li>Vollausgestatteter Transporter: Unser Transporter ist mit einer Standheizung und Mikrowelle ausgestattet, damit du auch an kalten Tagen im warmen Auto warmes Essen genießen kannst.</li>
+      </ul>
+    </ul>
+  
+    <h4>Klingt gut?<br>
+    Dann ruf mich einfach an oder komm im Büro vorbei.
+  </h4>
+  </div>
+</div>
+<app-contact [heading]="'Wir freuen uns dich kennenzulernen! Kontaktier uns einfach per E-Mail, Telefon, Whatsapp oder Kontaktformular.'"></app-contact>
+<app-contact-form></app-contact-form>

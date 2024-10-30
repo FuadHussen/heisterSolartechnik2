@@ -1,0 +1,79 @@
+<app-header [title]="pageTitle"></app-header>
+<div class="faq-container-wrapper">
+  <div class="faq-container">
+    <h1>{{ allgemeineFragen.title }}</h1>
+    <div *ngFor="let question of allgemeineFragen.questions; let i = index">
+      <div class="faq-item" (click)="toggle('allgemeine', i)">
+        <div class="faq-question">
+          <fa-icon [icon]="activeIndex.allgemeine === i ? faMinus : faPlus"></fa-icon>
+          <span>{{ question.question }}</span>
+        </div>
+        <div class="faq-answer" [class.open]="activeIndex.allgemeine === i">
+          <p>{{ question.answer }}</p>
+        </div>
+      </div>
+    </div>
+
+    <h1>{{ installationFragen.title }}</h1>
+    <div *ngFor="let question of installationFragen.questions; let i = index">
+      <div class="faq-item" (click)="toggle('installation', i)">
+        <div class="faq-question">
+          <fa-icon [icon]="activeIndex.installation === i ? faMinus : faPlus"></fa-icon>
+          <span>{{ question.question }}</span>
+        </div>
+        <div class="faq-answer" [class.open]="activeIndex.installation === i">
+          <p>{{ question.answer }}</p>
+        </div>
+      </div>
+    </div>
+
+    <h1>{{ rentabilitaetFragen.title }}</h1>
+    <div *ngFor="let question of rentabilitaetFragen.questions; let i = index">
+      <div class="faq-item" (click)="toggle('rentabilitaet', i)">
+        <div class="faq-question">
+          <fa-icon [icon]="activeIndex.rentabilitaet === i ? faMinus : faPlus"></fa-icon>
+          <span>{{ question.question }}</span>
+        </div>
+        <div class="faq-answer" [class.open]="activeIndex.rentabilitaet === i">
+          <p>{{ question.answer }}</p>
+        </div>
+      </div>
+    </div>
+
+    <h1>{{ begriffserklaerungenFragen.title }}</h1>
+    <div
+      *ngFor="
+        let question of begriffserklaerungenFragen.questions;
+        let i = index
+      "
+    >
+      <div class="faq-item" (click)="toggle('begriffserklaerungen', i)">
+        <div class="faq-question">
+          <fa-icon [icon]="activeIndex.begriffserklaerungen === i ? faMinus : faPlus"></fa-icon>
+          <span>{{ question.question }}</span>
+        </div>
+
+        <div class="faq-answer" [class.open]="activeIndex.begriffserklaerungen === i">
+          <p>{{ question.answer }}</p>
+          <p *ngIf="question.question === 'Was ist Globalstrahlung?'">
+            Weitere Informationen finden Sie im 
+            <a href="https://www.dwd.de/DE/leistungen/solarenergie/download_strahlungsbericht_2022.pdf?__blob=publicationFile&v=7#:~:text=Im%20Jahr%202022%20wurde%20in,m2%20erreicht%20(Abbildung%201" target="_blank">PDF Anhang</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h1>{{ stromspeicherFragen.title }}</h1>
+    <div *ngFor="let question of stromspeicherFragen.questions; let i = index">
+      <div class="faq-item" (click)="toggle('stromspeicher', i)">
+        <div class="faq-question">
+          <fa-icon [icon]="activeIndex.stromspeicher === i ? faMinus : faPlus"></fa-icon>
+          <span>{{ question.question }}</span>
+        </div>
+        <div class="faq-answer" [class.open]="activeIndex.stromspeicher === i">
+          <p>{{ question.answer }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
