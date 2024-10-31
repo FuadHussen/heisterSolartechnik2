@@ -1,9 +1,10 @@
 import { Component, HostListener } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-vertrauenswuerdiger-partner',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './vertrauenswuerdiger-partner.component.html',
   styleUrl: './vertrauenswuerdiger-partner.component.scss'
 })

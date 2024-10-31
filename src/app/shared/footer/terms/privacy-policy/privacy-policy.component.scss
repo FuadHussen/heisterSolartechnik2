@@ -1,0 +1,45 @@
+.datenschutz-container {
+    background-color: #F0F0F0;
+    padding: 64px 128px;
+}
+
+.datenschutz-container h1 {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 32px auto;
+    line-height: 1.2;
+}
+
+.datenschutz-container h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 24px auto;
+}
+
+.datenschutz-container p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7A7A7A;
+    margin: 16px 0;
+}
+
+.datenschutz-container a {
+    color: #000;
+    text-decoration: none;
+}
+
+.datenschutz-container a:hover {
+    text-decoration: underline;
+}
+
+.datenschutz-container ul {
+    margin: 10px 0;
+    padding-left: 64px;
+  }
+  
+  .datenschutz-container li {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7A7A7A;
+    margin-bottom: 5px;
+  }

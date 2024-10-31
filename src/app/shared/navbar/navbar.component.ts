@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -8,5 +9,13 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  toggleMenu() {
+    const menuItems = document.querySelector('.menu-items');
+    menuItems?.classList.toggle('show');
+  }
 
+  closeMenu() {
+    const menuItems = document.querySelector('.menu-items');
+    menuItems?.classList.remove('show');
+  }
 }

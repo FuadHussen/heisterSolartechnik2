@@ -1,15 +1,27 @@
 <nav id="menu">
   <div>
-    <img src="./../../assets/heister-solartechnik-logo.png" alt="" />
+    <img
+      routerLink="/"
+      src="./../../assets/heister-solartechnik-logo.png"
+      alt=""
+    />
   </div>
-  <div>
-    <ul>
-      <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/ueber-uns">Über Uns</a></li>
-      <li><a routerLink="/leistungen">Leistungen</a></li>
-      <li><a routerLink="/faq">FAQ</a></li>
-      <li><a routerLink="/karriere">Karriere</a></li>
-      <li><button routerLink="/kontakt" class="button-17">Kontakt</button></li>
-    </ul>
+  <div class="menu-container">
+    <button class="burger-menu" (click)="toggleMenu()">☰</button>
+    <div class="menu-items">
+      <ul>
+        <li><a (click)="closeMenu()" routerLink="/">Home</a></li>
+        <li><a (click)="closeMenu()" routerLink="/ueber-uns">Über Uns</a></li>
+        <li>
+          <a (click)="closeMenu()" routerLink="/leistungen">Leistungen</a>
+        </li>
+        <li><a (click)="closeMenu()" routerLink="/faq">FAQ</a></li>
+        <li><a (click)="closeMenu()" routerLink="/karriere">Karriere</a></li>
+        <button (click)="closeMenu()" routerLink="/kontakt" class="button-17">
+          Kontakt
+        </button>
+      </ul>
+    </div>
+    <button routerLink="/kontakt" class="button-17">Kontakt</button>
   </div>
 </nav>

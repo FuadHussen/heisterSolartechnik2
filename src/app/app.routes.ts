@@ -8,6 +8,11 @@ import { DachdeckerComponent } from './karriere/jobs/dachdecker/dachdecker.compo
 import { ElektrikerComponent } from './karriere/jobs/elektriker/elektriker.component';
 import { ChefComponent } from './karriere/jobs/chef/chef.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
+import { ImprintComponent } from './shared/footer/terms/imprint/imprint.component';
+import { PrivacyPolicyComponent } from './shared/footer/terms/privacy-policy/privacy-policy.component';
+import { AgbB2bComponent } from './shared/footer/terms/agb-b2b/agb-b2b.component';
+import { AgbB2cComponent } from './shared/footer/terms/agb-b2c/agb-b2c.component';
+
 export const routes: Routes = [
   { path: '', component: LandingPageComponent }, 
   { path: 'ueber-uns', component: UeberUnsComponent },
@@ -17,5 +22,9 @@ export const routes: Routes = [
   { path: 'dachdecker', component: DachdeckerComponent },
   { path: 'elektriker', component: ElektrikerComponent },
   { path: 'chef', component: ChefComponent },
-  { path: 'kontakt', component: KontaktComponent }
+  { path: 'kontakt', component: KontaktComponent },
+  { path: 'impressum', component: ImprintComponent },
+  { path: 'datenschutz', component: PrivacyPolicyComponent },
+  { path: 'agb-b2b', component: AgbB2bComponent },
+  { path: 'agb-b2c', component: AgbB2cComponent }
 ];

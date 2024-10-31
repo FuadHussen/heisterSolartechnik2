@@ -10,26 +10,35 @@
     <div>
       <h3>KONTAKTDATEN</h3>
       <p>
-        <fa-icon [icon]="faLocationDot"></fa-icon> Heister Solartechnik GmbH
-        Olpener Straße 919 51109 Köln
+        <a href="https://www.google.com/maps/search/?api=1&query=Olpener+Straße+919+51109+Köln" target="_blank">
+          <fa-icon [icon]="faLocationDot"></fa-icon> Heister Solartechnik GmbH
+          Olpener Straße 919 51109 Köln
+        </a>
       </p>
-      <p> <fa-icon [icon]="faEnvelope"></fa-icon> info&#64;heister-solartechnik.de
+      <p>
+        <a href="mailto:info@heister-solartechnik.de">
+          <fa-icon [icon]="faEnvelope"></fa-icon> info&#64;heister-solartechnik.de
+        </a>
       </p>
-      <p><fa-icon [icon]="faPhone"></fa-icon> 0221-29 862 862</p>
+      <p>
+        <a href="tel:+4922129862862">
+          <fa-icon [icon]="faPhone"></fa-icon> 0221-29 862 862
+        </a>
+      </p>
     </div>
     <div class="footerEnd">
       <div>
         <h3>WICHTIGE LINKS</h3>
         <div class="links-container">
           <div class="important-links">
-            <a href="">Home</a>
-            <a href="">Über Uns</a>
-            <a href="">Leistungen</a>
+            <a routerLink="/">Home</a>
+            <a routerLink="/ueber-uns">Über Uns</a>
+            <a routerLink="/leistungen">Leistungen</a>
           </div>
           <div class="important-links-last-child">
-            <a href="">Karriere</a>
-            <a href="">FAQs</a>
-            <a href="">Kontakt</a>
+            <a routerLink="/karriere">Karriere</a>
+            <a routerLink="/faq">FAQs</a>
+            <a routerLink="/kontakt">Kontakt</a>
           </div>
         </div>
       </div>
@@ -42,9 +51,9 @@
     <p>© 2024 Alle Rechte vorbehalten.</p>
   </div>
   <div>
-    <a href="">Impressum</a>
-    <a href="">Datenschutzerklärung</a>
-    <a href="">AGB B2B</a>
-    <a href="">AGB B2C</a>
+    <a routerLink="/impressum">Impressum</a>
+    <a routerLink="/datenschutz">Datenschutzerklärung</a>
+    <a routerLink="/agb-b2b">AGB B2B</a>
+    <a routerLink="/agb-b2c">AGB B2C</a>
   </div>
 </div>

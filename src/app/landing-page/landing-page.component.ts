@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { VertrauenswuerdigerPartnerComponent } from './vertrauenswuerdiger-partner/vertrauenswuerdiger-partner.component';
 import { WirKoennenHelfenComponent } from './wir-koennen-helfen/wir-koennen-helfen.component';
 import { WarumHeisterComponent } from './warum-heister/warum-heister.component';
@@ -12,6 +13,7 @@ import { StellenanzeigeComponent } from './stellenanzeige/stellenanzeige.compone
   selector: 'app-landing-page',
   standalone: true,
   imports: [
+    RouterModule,
     VertrauenswuerdigerPartnerComponent,
     WirKoennenHelfenComponent,
     WarumHeisterComponent,

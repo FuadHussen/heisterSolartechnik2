@@ -1,1 +1,52 @@
 <app-header [title]="title"></app-header>
+<div class="contact-text">
+  <p>
+    Wir freuen uns über Ihr Interesse an unseren Solartechnik-Lösungen. Bei
+    Fragen, Anregungen oder dem Wunsch nach einer individuellen Beratung sind
+    wir stets für Sie da. Zögern Sie nicht, uns übers Telefon, E-Mail oder
+    unser Kontaktformular zu erreichen.
+  </p>
+</div>
+<div class="contact-container">
+  <div class="contact-item">
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=Heister+Solartechnik+GmbH+Olpener+Straße+919+51109+Köln"
+      target="_blank"
+    >
+      <fa-icon [icon]="faMapLocationDot"></fa-icon>
+    </a>
+    <h3>Ort/Lage</h3>
+    <p>Heister Solartechnik GmbH Olpener<br />Straße 919 51109 Köln</p>
+  </div>
+  <div class="contact-item">
+    <a href="mailto:info@heister-solartechnik.de">
+      <fa-icon [icon]="faEnvelopeOpenText"></fa-icon>
+    </a>
+    <h3>Email</h3>
+    <p>info&#64;heister-solartechnik.de</p>
+  </div>
+  <div class="contact-item">
+    <a href="tel:022129862862">
+      <fa-icon [icon]="faPhone"></fa-icon>
+    </a>
+    <h3>Telefon</h3>
+    <p>0221-29 862 862</p>
+  </div>
+</div>
+<div class="contact-form-container-wrapper">
+  <div class="contact-form-container">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <input formControlName="name" placeholder="Name" />
+      <div class="row">
+        <input formControlName="email" placeholder="Email" />
+        <input formControlName="telefonnummer" placeholder="Telefonnummer" />
+      </div>
+      <input formControlName="adresse" placeholder="Adresse" />
+      <input formControlName="subject" placeholder="Betreff" />
+      <button type="submit">Absenden</button>
+    </form>
+    <p *ngIf="successMessage">{{ successMessage }}</p>
+  </div>
+</div>
+  
+

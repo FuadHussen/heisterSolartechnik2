@@ -14,25 +14,25 @@ export class WirKoennenHelfenComponent {
       title: "Photovoltaikanlagen in Köln",
       description: "Von der Planung bis zur Installation - wir bieten maßgeschneiderte Lösungen.",
       buttonText: "Weiterlesen",
-      link: "https://heister-solartechnik.de/leistungen/#photovoltaikanlagen"
+      link: "/leistungen#image-1"
     },
     {
       title: "Energiespeicherlösungen",
       description: "Nutzen Sie die Sonnenenergie rund um die Uhr und optimieren Sie den Eigenverbrauch mit den besten Batteriespeichersystemen.",
       buttonText: "Weiterlesen",
-      link: "https://heister-solartechnik.de/leistungen/#energie"
+      link: "/leistungen#image-2"
     },
     {
       title: "Elektrische Mobilität",
       description: "Sie wollen Ihr Elektrofahrzeug mit Sonnenenergie laden? Wir helfen bei der Auswahl der idealen Wallbox.",
       buttonText: "Weiterlesen",
-      link: "https://heister-solartechnik.de/leistungen/#elektrische"
+      link: "/leistungen#image-3"
     },
     {
       title: "Wärmepumpen",
       description: "Heizen Sie Ihr Zuhause mit der Kraft der Sonne und nutzen Sie die Energie optimal mit unseren maßgeschneiderten Lösungen.",
       buttonText: "Weiterlesen",
-      link: "https://heister-solartechnik.de/leistungen/#warmepumpen"
+      link: "/leistungen#image-4"
     }
   ];
 
@@ -46,9 +46,9 @@ export class WirKoennenHelfenComponent {
       const windowHeight = window.innerHeight;
 
       if (servicesPosition < windowHeight && servicesPosition > 0) {
-        this.isAnimated = true; // Wenn im Sichtbereich, Animation starten
+        this.isAnimated = true; 
       } else {
-        this.isAnimated = false; // Wenn nicht im Sichtbereich, Animation stoppen
+        this.isAnimated = false; 
       }
     }
   }

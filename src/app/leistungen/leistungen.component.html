@@ -34,6 +34,7 @@
     class="image-content"
     [ngClass]="{ 'last-image': i === 4 }"
     [attr.data-number]="'0' + (i + 1)"
+    id="image-{{i + 1}}"
   >
     <img [src]="item.imageUrl" alt="{{ item.title }}" />
   </div>
