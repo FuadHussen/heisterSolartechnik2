@@ -1,9 +1,11 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -14,6 +16,7 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post('/send-email', (req, res) => {
+  console.log('Request received:', req.body);
   const { name, email, phone, message } = req.body;
 
   const mailOptions = {

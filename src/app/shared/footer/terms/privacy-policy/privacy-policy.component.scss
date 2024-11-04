@@ -43,3 +43,28 @@
     color: #7A7A7A;
     margin-bottom: 5px;
   }
+
+
+@media (max-width: 665px) {
+  .datenschutz-container {
+    padding: 8px 0;
+    width: 100%;
+    max-width: fit-content;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    li {
+      font-size: 14px;
+    }
+  }
+}

@@ -8,7 +8,6 @@
 .contact-text {
   text-align: center;
   background-color: #f0f0f0;
-  width: 100%;
   padding: 8px;
 
   >p {
@@ -100,4 +99,19 @@
       }
     }
   }
-  
+
+
+@media (max-width: 900px) {
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    .contact-item {
+      width: 100%;
+      max-width: 100%;
+      padding: 16px;
+    }
+  }
+}
