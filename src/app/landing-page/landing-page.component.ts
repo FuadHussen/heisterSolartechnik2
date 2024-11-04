@@ -8,11 +8,13 @@ import { RechnerComponent } from './rechner/rechner.component';
 import { FunktionPVComponent } from './funktion-pv/funktion-pv.component';
 import { QualitaetComponent } from './qualitaet/qualitaet.component';
 import { StellenanzeigeComponent } from './stellenanzeige/stellenanzeige.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
   imports: [
+    CommonModule,
     RouterModule,
     VertrauenswuerdigerPartnerComponent,
     WirKoennenHelfenComponent,

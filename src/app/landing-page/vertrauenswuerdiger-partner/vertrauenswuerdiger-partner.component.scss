@@ -105,3 +105,27 @@ h1 {
         margin-top: 16px;
     }
 }
+
+@media (max-width: 1055px) {
+    .text-content{
+        width: 100%;
+        padding: 64px 0 64px 64px;
+    }
+
+    .image-content{
+        width: 100%;
+        height: auto;
+
+        >img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .svg-container{
+
+        left: 0;
+        margin-top: 16px;
+        transform: translateX(0);
+    }
+}

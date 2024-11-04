@@ -162,3 +162,32 @@ a {
 }
 
 
+@media (max-width: 1127px) {
+
+  .container {
+    height: auto;
+    width: 100%;
+  }
+
+  .services {
+    width: 100%;
+    max-width: 650px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+  }
+
+  .service-item {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 645px) {
+  .services {
+    max-width: 300px;
+  }
+}

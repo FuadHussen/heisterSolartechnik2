@@ -80,6 +80,7 @@ p {
     position: absolute;
     padding: 10px;
     border-radius: 5px;
+    max-width: 200%;
   }
 
 .sun {
@@ -110,4 +111,45 @@ p {
 .pole {
     position: relative;
     right: 100px;
+}
+
+@media (max-width: 1050px) {
+  img {
+    display: none;
+  }
+
+  .elementor-container {
+    padding: 32px;
+  }
+
+  .elementor-content {
+    display: block;
+  }
+
+  .text-overlay {
+    max-width: 100%;
+    position: relative;
+    right: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  h1 {  
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 768px) {
+  .elementor-container {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 24px!important;
+  }
+
+  p {
+    font-size: 14px!important;
+  }
 }

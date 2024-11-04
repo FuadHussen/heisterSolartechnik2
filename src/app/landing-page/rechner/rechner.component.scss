@@ -12,3 +12,8 @@ iframe {
   max-width: 1024px;
 }
 
+@media (max-width: 1045px) {
+  iframe {
+    max-width: 100%;
+  }
+}

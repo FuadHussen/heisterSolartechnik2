@@ -111,3 +111,32 @@ p{
     align-items: start;
     gap: 8px;
 }
+
+@media (max-width: 740px) {
+    p, a {
+        font-size: 14px!important;
+    }
+
+    .links-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .imprint-part p, a{
+        font-size: 14px!important;
+    }
+}
+
+@media (max-width: 550px) {
+    footer {
+        height: 100%;
+        >div {
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+
+    .imprint-part {
+        display: block;
+    }
+}
