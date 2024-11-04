@@ -81,3 +81,19 @@
     opacity: 1;
     transform: scale(1);
 }
+
+@media (max-width: 768px) {
+    .beratung-section h1 {
+        font-size: 24px!important;
+    }
+
+    .description {
+        font-size: 14px!important;
+    }
+}
+
+@media (max-width: 480px) {
+    .beratung-section-content{
+        padding: 24px!important;
+    }
+}

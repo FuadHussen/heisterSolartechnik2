@@ -62,3 +62,28 @@
     font-weight: 400;
     margin-top: 8px;
 }
+
+@media (max-width: 750px) {
+    .vorgehensweise-section{
+
+        p{
+            margin-bottom: 32px;
+            font-size: 14px!important;
+        }
+
+        h1{
+            font-size: 24px!important;
+        }
+
+        h3{
+            font-size: 18px!important;
+        }
+
+        .step i{
+            font-size: 32px;
+            width: 80px;
+            height: 80px;
+            margin-right: 24px;
+        }
+    }
+}
