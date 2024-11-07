@@ -1,12 +1,33 @@
 <div class="contact-form-container-wrapper">
   <div class="contact-form-container">
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-      <input formControlName="name" placeholder="Name" />
-      <div class="row">
-        <input formControlName="email" placeholder="Email" />
-        <input formControlName="phone" placeholder="Telefon" />
+      <input type="hidden" name="access_key" value="06fbb285-ad22-42fb-83e7-53fffe79503b" />
+      <label for="name">Name <span class="required">*</span></label>
+      <input id="name" formControlName="name" placeholder="Max Mustermann" [formNoValidate]="true" />
+      <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="error">
+        Bitte geben Sie einen Namen ein.
       </div>
-      <textarea formControlName="message" placeholder="Message"></textarea>
+      <div class="row">
+        <div>
+          <label for="email">Email <span class="required">*</span></label>
+          <input id="email" formControlName="email" placeholder="M.Mustermann@gmail.com" [formNoValidate]="true" />
+          <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="error">
+            Bitte geben Sie eine gültige E-Mail-Adresse ein.
+          </div>
+        </div>
+        <div>
+          <label for="telefonnummer">Telefonnummer <span class="required">*</span></label>
+          <input id="telefonnummer" formControlName="telefonnummer" placeholder="0178123456789" [formNoValidate]="true" />
+          <div *ngIf="contactForm.get('telefonnummer')?.invalid && contactForm.get('telefonnummer')?.touched" class="error">
+            Bitte geben Sie eine gültige Telefonnummer ein.
+          </div>
+        </div>
+      </div>
+      <label for="nachricht">Nachricht <span class="required">*</span></label>
+      <textarea id="nachricht" formControlName="nachricht" placeholder="Ihre Nachricht..."></textarea>
+      <div *ngIf="contactForm.get('nachricht')?.invalid && contactForm.get('nachricht')?.touched" class="error">
+        Bitte geben Sie eine Nachricht ein.
+      </div>
       <button type="submit">Absenden</button>
     </form>
     <p *ngIf="successMessage">{{ successMessage }}</p>

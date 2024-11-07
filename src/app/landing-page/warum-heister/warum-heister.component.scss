@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   padding: 20px;
   background-color: #f0f0f0;
   padding-top: 210px;
@@ -77,6 +76,7 @@
 
   .text {
     max-width: 950px!important;
+    padding-top: 100px;
   }
 
   img {
@@ -96,11 +96,6 @@
   p {
     font-size: 14px!important;
   }
-
-  .warum-heister {
-    padding-top: 375px;
-    padding-bottom: 375px;
-  }
 }
 
 @media (max-width: 350px) {
@@ -114,10 +109,5 @@
 
   p {
     font-size: 14px!important;
-  }
-
-  .warum-heister {
-    padding-top: 400px;
-    padding-bottom: 400px;
   }
 }

@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
-import { HeaderComponent } from "../shared/header/header.component";
+import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';import { HeaderComponent } from "../shared/header/header.component";
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { ContactFormComponent } from "../contact-form/contact-form.component";
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faMapLocationDot, faEnvelopeOpenText, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { MailService } from '../services/mail.service';
 
 @Component({
   selector: 'app-kontakt',
@@ -14,41 +14,67 @@ import { faMapLocationDot, faEnvelopeOpenText, faPhone } from '@fortawesome/free
   templateUrl: './kontakt.component.html',
   styleUrl: './kontakt.component.scss'
 })
-export class KontaktComponent {
 
-  title = 'Kontakt - Heister Solartechnik GmbH';
-
+export class KontaktComponent implements AfterViewInit {
+  contactForm: FormGroup;
+  successMessage: string = '';
   faMapLocationDot = faMapLocationDot;
   faEnvelopeOpenText = faEnvelopeOpenText;
   faPhone = faPhone;
+  title = 'Kontakt';
 
-  contactForm: FormGroup;
+@ViewChild('adresseInput') adresseInput!: ElementRef;
 
-  successMessage: string = '';
+  ngAfterViewInit() {
+    const autocomplete = new google.maps.places.Autocomplete(this.adresseInput.nativeElement, {
+      types: ['address'],
+      componentRestrictions: { country: 'DE' }
+    });
+  }
 
-  constructor(private fb: FormBuilder, private http: HttpClient) {
+  constructor(private fb: FormBuilder, private mailService: MailService) {
     this.contactForm = this.fb.group({
-      name: ['', Validators.required],
+      name: ['', [Validators.required, Validators.pattern(/^[a-zA-Z\s]+$/)]],
       email: ['', [Validators.required, Validators.email]],
-      telefonnummer: ['', Validators.required],
+      telefonnummer: ['', [Validators.required, Validators.pattern(/^[0-9+\-/\s]+$/)]],
       adresse: [''],
       nachricht: ['', Validators.required],
-      subject: [''],
+      subject: ['', Validators.required],
       preferredContactMethod: ['']
     });
   }
 
   onSubmit() {
     if (this.contactForm.valid) {
-      this.http.post('http://localhost:3000/send-email', this.contactForm.value)
-        .subscribe(
-          response => {
-            this.successMessage = 'Ihre Nachricht wurde erfolgreich gesendet!';
-          },
-          error => {
-            console.error('Error sending email', error);
+      const formData = new FormData();
+      
+      const name = this.contactForm.get('name')?.value;
+      const subject = this.contactForm.get('subject')?.value;
+  
+      formData.append('subject', `${name}`);
+      
+      Object.entries(this.contactForm.value).forEach(([key, value]) => {
+        if (key !== 'subject') { 
+          formData.append(key, value as string);
+        }
+      });
+  
+      formData.append('access_key', '06fbb285-ad22-42fb-83e7-53fffe79503b');
+  
+      this.mailService.sendEmail(formData)
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            this.successMessage = "Ihre Nachricht wurde erfolgreich gesendet.";
+            this.contactForm.reset();
+          } else {
+            this.successMessage = data.message;
           }
-        );
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          this.successMessage = "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.";
+        });
     }
   }
 }

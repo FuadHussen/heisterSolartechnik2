@@ -6,8 +6,6 @@
 
 .content {
     padding: 64px;
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
 h2 {
@@ -15,7 +13,6 @@ h2 {
     color: #7A7A7A;
     margin-bottom: 16px;
     font-weight: 500;
-    max-width: 800px;
 }
 
 h3 {
@@ -41,7 +38,6 @@ strong {
 
 li {
     color: #7A7A7A;
-    width: 800px;
     font-size: 16px;
 }
 
@@ -50,4 +46,25 @@ h4 {
     color: #7A7A7A;
     margin-top: 20px;
     font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .content {
+        padding: 32px;
+        h2 {
+            font-size: 18px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        li {
+            font-size: 14px;
+        }
+        p {
+            font-size: 14px;
+        }
+        h4 {
+            font-size: 18px;
+        }
+    }
 }
