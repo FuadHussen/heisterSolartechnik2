@@ -1,3 +1,15 @@
+$button-bg-color: black;
+$button-text-color: white;
+
+@mixin button-style {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: $button-bg-color;
+    color: $button-text-color;
+}
+
 .premium-solar-container {
     text-align: center;
     padding: 128px;
@@ -24,8 +36,8 @@
             padding: 10px 20px;
             font-size: 1em;
             cursor: pointer;
-            background-color: black;
-            color: white;
+            background-color: $button-bg-color;
+            color: $button-text-color;
         }
     }
 
@@ -57,12 +69,7 @@
             }
 
             button {
-                margin-top: 20px;
-                padding: 10px 20px;
-                font-size: 1em;
-                cursor: pointer;
-                background-color: black;
-                color: white;
+                @include button-style;
             }
         }
 

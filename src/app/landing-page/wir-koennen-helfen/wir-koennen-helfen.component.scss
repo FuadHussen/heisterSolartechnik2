@@ -1,3 +1,11 @@
+
+$background-color: #fff;
+$border-color: #ddd;
+@mixin flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .triangle-shape {
   width: 100%;
   overflow: hidden;
@@ -67,8 +75,7 @@
 }
 
 .services {
-  display: flex;
-  justify-content: space-between;
+  @include flex-center;
   width: 100%;
   max-width: 1200px;
   margin-bottom: -138px;
@@ -77,8 +84,8 @@
     flex: 1 1 calc(25% - 20px);
     margin: 10px;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: $background-color;
+    border: 1px solid $border-color;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;

@@ -1,14 +1,21 @@
-.service-section {
+$primary-bg-color: #F5F5F5;
+$secondary-bg-color: #F0F0F0;
+
+@mixin flex-center {
     display: flex;
-    justify-content: space-evenly; 
-    align-items: center; 
-    background-color: #F5F5F5;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.service-section {
+    @include flex-center;
+    background-color: $primary-bg-color;
     padding: 64px 124px;
     position: relative;
     
     &.reverse {
         flex-direction: row-reverse;
-        background-color: #F0F0F0; 
+        background-color: $secondary-bg-color; 
     }
 
     .text-content {
@@ -93,24 +100,15 @@ li.visible {
 .image-content {
     position: relative;
 
-    &[data-number="01"]::before {
-        left: -50%;
-    }
-
-    &[data-number="02"]::before {
-        left: 50%;
-    }
-
-    &[data-number="03"]::before {
-        left: -50%;
-    }
-
-    &[data-number="04"]::before {
-        left: 50%;
-    }
-
+    &[data-number="01"]::before,
+    &[data-number="03"]::before,
     &[data-number="05"]::before {
         left: -50%;
+    }
+
+    &[data-number="02"]::before,
+    &[data-number="04"]::before {
+        left: 50%;
     }
 }
 
