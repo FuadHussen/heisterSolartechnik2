@@ -51,6 +51,17 @@ export class KontaktComponent implements AfterViewInit {
       const name = this.contactForm.get('name')?.value;
       const subject = this.contactForm.get('subject')?.value;
   
+      const requestData = {
+        Request: {
+          Name: this.contactForm.get('name')?.value,
+          PhoneNumber: this.contactForm.get('telefonnummer')?.value,
+          Email: this.contactForm.get('email')?.value,
+          Address: this.contactForm.get('adresse')?.value,
+          Message: this.contactForm.get('nachricht')?.value
+        }
+      };
+
+      formData.append('json', JSON.stringify(requestData));
       formData.append('subject', `${name}`);
       
       Object.entries(this.contactForm.value).forEach(([key, value]) => {
@@ -58,9 +69,9 @@ export class KontaktComponent implements AfterViewInit {
           formData.append(key, value as string);
         }
       });
-  
+
       formData.append('access_key', '06fbb285-ad22-42fb-83e7-53fffe79503b');
-  
+
       this.mailService.sendEmail(formData)
         .then(response => response.json())
         .then(data => {
