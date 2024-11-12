@@ -47,11 +47,11 @@ export class KontaktComponent implements AfterViewInit {
   onSubmit() {
     if (this.contactForm.valid) {
       const formData = new FormData();
-      
       const name = this.contactForm.get('name')?.value;
       const subject = this.contactForm.get('subject')?.value;
-  
+
       const requestData = {
+        access_key: '06fbb285-ad22-42fb-83e7-53fffe79503b',
         Request: {
           Name: this.contactForm.get('name')?.value,
           PhoneNumber: this.contactForm.get('telefonnummer')?.value,
@@ -72,6 +72,38 @@ export class KontaktComponent implements AfterViewInit {
 
       formData.append('access_key', '06fbb285-ad22-42fb-83e7-53fffe79503b');
 
+      fetch('https://hook.eu2.make.com/j5jfqrpjlt8zqxuis6pja8rmp976geqe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(requestData)
+      })
+      .then(response => {
+        const contentType = response.headers.get('content-type');
+        if (contentType && contentType.includes('application/json')) {
+          return response.json();
+        } else {
+          return response.text();
+        }
+      })
+      .then(data => {
+        if (typeof data === 'object' && data.success) {
+          this.successMessage = "Ihre Nachricht wurde erfolgreich gesendet.";
+          this.contactForm.reset();
+        } else if (typeof data === 'string' && data === 'Accepted') {
+          this.successMessage = "Ihre Nachricht wurde erfolgreich gesendet.";
+          this.contactForm.reset();
+        } else {
+          this.successMessage = typeof data === 'string' ? data : "Unbekannte Antwort vom Server.";
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        this.successMessage = "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.";
+      });
+
+      // Send email using MailService
       this.mailService.sendEmail(formData)
         .then(response => response.json())
         .then(data => {
