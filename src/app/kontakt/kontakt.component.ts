@@ -32,7 +32,7 @@ export class KontaktComponent implements AfterViewInit {
     });
   }
 
-  constructor(private fb: FormBuilder, private mailService: MailService) {
+  constructor(public fb: FormBuilder, public mailService: MailService) {
     this.contactForm = this.fb.group({
       name: ['', [Validators.required, Validators.pattern(/^[a-zA-Z\s]+$/)]],
       email: ['', [Validators.required, Validators.email]],
