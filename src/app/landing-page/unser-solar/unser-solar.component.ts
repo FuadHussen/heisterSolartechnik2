@@ -19,7 +19,7 @@ interface ProductDetail {
 })
 export class UnserSolarComponent {
   currentProduct: ProductDetail;
-  activeIndex: number = 0; // Standardmäßig auf den ersten Button gesetzt
+  activeIndex: number = 0; 
   products: ProductDetail[] = [
     {
       title: 'Mono S4 Halfcut',

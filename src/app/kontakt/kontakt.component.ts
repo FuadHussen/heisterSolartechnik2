@@ -51,7 +51,6 @@ export class KontaktComponent implements AfterViewInit {
       const subject = this.contactForm.get('subject')?.value;
 
       const requestData = {
-        access_key: '06fbb285-ad22-42fb-83e7-53fffe79503b',
         Request: {
           Name: this.contactForm.get('name')?.value,
           PhoneNumber: this.contactForm.get('telefonnummer')?.value,
