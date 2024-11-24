@@ -4,6 +4,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { HeaderComponent } from "../shared/header/header.component";
 import { VorgehensweiseComponent } from "./vorgehensweise/vorgehensweise.component";
 import { BeratungComponent } from "./beratung/beratung.component";
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-leistungen',
@@ -16,7 +17,10 @@ export class LeistungenComponent implements AfterViewInit {
   
   defaultTitle = 'Unsere Dienstleistungen - Ihr Weg zur Sonnenenergie';
 
-  constructor(private sanitizer: DomSanitizer) { }
+  constructor(
+    private sanitizer: DomSanitizer,
+    private route: ActivatedRoute
+  ) { }
 
   ngAfterViewInit() {
     const observer = new IntersectionObserver((entries) => {
@@ -29,6 +33,21 @@ export class LeistungenComponent implements AfterViewInit {
 
     const items = document.querySelectorAll('li');
     items.forEach(item => observer.observe(item));
+
+    this.route.fragment.subscribe(fragment => {
+      if (fragment) {
+        setTimeout(() => {
+          const element = document.getElementById(fragment);
+          if (element) {
+            element.scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'start',
+              inline: 'nearest'
+            });
+          }
+        }, 100);
+      }
+    });
   }
 
   sanitizeSvg(svg: string): SafeHtml {

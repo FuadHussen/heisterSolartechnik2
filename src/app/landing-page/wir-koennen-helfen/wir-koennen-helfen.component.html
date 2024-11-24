@@ -391,7 +391,7 @@
       </div>
       <h3>{{ service.title }}</h3>
       <p>{{ service.description }}</p>
-      <a [href]="service.link" class="button-17">{{ service.buttonText }}</a>
+      <a [routerLink]="['/leistungen']" [fragment]="getFragment(service.link)" class="button-17">{{ service.buttonText }}</a>
     </div>
   </div>
 </div>
