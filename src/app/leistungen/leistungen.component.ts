@@ -181,7 +181,7 @@ export class LeistungenComponent implements AfterViewInit {
       "<strong>Leistungsstarke Hardware:</strong> Optimierte Ausgangsleistung (bis zu 20 kW bei einem 10 kW-Wechselrichter) und innovatives Sicherheitssystem.",
       "<strong>Sofortige Stromversorgung bei Ausfall:</strong> Patentierte Gateway-Technologie mit 0 ms Umschaltzeit bei Stromausfällen – einzigartig auf dem Markt."
     ],
-    "imageUrl": "./assets/leistungen/Sigen-Gateway-C120-6-Left.png",
+    "imageUrl": "./assets/leistungen/Leistungen-Sigenergy.png",
     "svg": `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet">
             <defs>
               <clipPath id="__lottie_element_13">
@@ -203,4 +203,35 @@ export class LeistungenComponent implements AfterViewInit {
           </svg>`,
     "reverse": true
   };
+
+  // item06 = {
+  //   "title": "mySigen APP: Überwachung in Echtzeit",
+  //   "descriptions": [
+  //     "<strong>Echtzeit-Überwachung:</strong> Live-Anzeige des Energieverbrauchs und der Energieproduktion.",
+  //     "<strong>Fernsteuerung:</strong> Kontrolle und Steuerung von Anlagen wie Wechselrichtern oder Batteriesystemen über die App.",
+  //     "<strong>Detaillierte Analysen:</strong> Zugriff auf historische Daten, Diagramme und Berichte zur Optimierung des Energieverbrauchs.",
+  //     "<strong>Benachrichtigungen:</strong> Push-Benachrichtigungen bei Anomalien, Systemfehlern oder wichtigen Ereignissen."
+  //   ],
+  //   "imageUrl": "./assets/leistungen/screenshot.png",
+  //   "svg": `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet">
+  //           <defs>
+  //             <clipPath id="__lottie_element_13">
+  //               <rect width="200" height="200" x="0" y="0"></rect>
+  //             </clipPath>
+  //           </defs>
+  //           <g clip-path="url(#__lottie_element_13)">
+  //             <g transform="matrix(9.283329963684082,0,0,9.283329963684082,25.733360290527344,25.733360290527344)" opacity="1" style="display: block">
+  //               <g opacity="1" transform="matrix(1,0,0,1,8,8)">
+  //                 <path fill="rgb(0,0,0)" fill-opacity="1" d="M0,-7.5 C-4.140999794006348,-7.5 -7.5,-4.140999794006348 -7.5,0 C-7.5,4.140999794006348 -4.140999794006348,7.5 0,7.5 C4.140999794006348,7.5 7.5,4.140999794006348 7.5,0 C7.5,-4.140999794006348 4.140999794006348,-7.5 0,-7.5z"></path>
+  //               </g>
+  //             </g>
+  //             <g transform="matrix(0.6735799908638,0,0,0.6735799908638,100,100)" opacity="1" style="display: block">
+  //               <g opacity="1" transform="matrix(1,0,0,1,-2.5,-0.75)">
+  //                 <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="20" d="M-62.55699920654297,-7.073999881744385 C-62.55699920654297,-7.073999881744385 -18.54199981689453,38.05799865722656 -18.54199981689453,38.05799865722656 C-18.54199981689453,38.05799865722656 64.03900146484375,-43.70199966430664 67.74600219726562,-47.37300109863281"></path>
+  //               </g>
+  //             </g>
+  //           </g>
+  //         </svg>`,
+  //   "reverse": false
+  // };
 }

@@ -12,10 +12,12 @@ $secondary-bg-color: #F0F0F0;
     background-color: $primary-bg-color;
     padding: 64px 124px;
     position: relative;
-    
+    align-items: flex-start;
+    gap: 16px;
+
     &.reverse {
         flex-direction: row-reverse;
-        background-color: $secondary-bg-color; 
+        background-color: $secondary-bg-color;
     }
 
     .text-content {
@@ -23,6 +25,7 @@ $secondary-bg-color: #F0F0F0;
         flex-direction: column;
         padding: 16px;
         width: 50%;
+
         >h1 {
             font-size: 24px;
             font-weight: 500;
@@ -46,29 +49,47 @@ $secondary-bg-color: #F0F0F0;
     }
 
     .image-content {
-        padding-top: 32px;
 
-        > img {
+        >img {
             width: 292px;
             height: 195px;
         }
 
-        &.last-image img {
-            height: 351px;
+        >.last-image img {
+            width: 438px;
+            height: 292px;
+
+            @media (max-width: 900px) {
+                width: 292px;
+                height: 195px;
+            }
         }
 
         position: relative;
+
+        &.last-image {
+            padding-top: 0;
+        }
+
+        &:last-child {
+
+            img {
+                width: 438px;
+                height: auto;
+                max-width: 100%;
+            }
+        }
     }
 
     .image-content::before {
         content: attr(data-number);
         position: absolute;
-        font-size: 17em; 
+        font-size: 17em;
         font-weight: 600;
         color: #E9E9E98C;
-        pointer-events: none; 
+        pointer-events: none;
     }
-}   
+}
 
 span {
     width: 50%;
@@ -104,141 +125,164 @@ li.visible {
     &[data-number="03"]::before,
     &[data-number="05"]::before {
         left: -50%;
+        top: 20%;
     }
 
     &[data-number="02"]::before,
     &[data-number="04"]::before {
         left: 50%;
     }
+
+    &[data-number="06"]::before {
+        left: 50%;
+    }
 }
 
 .svg-container {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
 }
 
 .svg-container svg {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .svg-container.light .elementor-shape-fill {
-  fill: #F8F8F8;
+    fill: #F8F8F8;
 }
 
 .svg-container.dark .elementor-shape-fill {
-  fill: #FFF;
+    fill: #FFF;
 }
 
 .contact-section {
-  background-color: #F8F8F8;
-  padding: 64px 124px;
+    background-color: #F8F8F8;
+    padding: 64px 124px;
 
-  >p{
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    font-size: 16px;
-    font-weight: 400;
-  }
+    >p {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
 
-.container > h2 {
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+.container>h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-transform: uppercase;
     transform: translate(-50%, -50%);
     color: white;
     z-index: 1;
 }
 
+.text-content {
+    padding: 0 !important;
+}
 
 @media (max-width: 1240px) {
     .image-content {
         &[data-number="01"]::before {
-            font-size: 12em!important;
+            font-size: 12em !important;
+            left: -20%;
         }
 
         &[data-number="02"]::before {
-            font-size: 12em!important;
+            font-size: 12em !important;
         }
 
         &[data-number="03"]::before {
-            font-size: 12em!important;
+            font-size: 12em !important;
+            left: -20%;
         }
 
         &[data-number="04"]::before {
-            font-size: 12em!important;
+            font-size: 12em !important;
         }
 
         &[data-number="05"]::before {
-            font-size: 12em!important;
+            font-size: 12em !important;
+            left: -20%;
+        }
+
+        &[data-number="06"]::before {
+            font-size: 12em !important;
         }
     }
 }
 
 @media (max-width: 900px) {
     .service-section {
-        padding: 32px 64px!important;
+        padding: 32px 64px !important;
     }
 
     .image-content {
         &[data-number="01"]::before {
-            font-size: 8em!important;
+            font-size: 8em !important;
             left: -20%;
         }
 
         &[data-number="02"]::before {
-            font-size: 8em!important;
-            left: 50%;
+            font-size: 8em !important;
         }
 
         &[data-number="03"]::before {
-            font-size: 8em!important;
+            font-size: 8em !important;
             left: -20%;
         }
 
         &[data-number="04"]::before {
-            font-size: 8em!important;
-            left: 50%;
+            font-size: 8em !important;
         }
 
         &[data-number="05"]::before {
-            font-size: 8em!important;
+            font-size: 8em !important;
             left: -20%;
+        }
+
+        &[data-number="06"]::before {
+            font-size: 8em !important;
+        }
+
+        >img {
+            width: 292px;
+            height: auto;
         }
     }
 
     .contact-section {
-        padding: 32px 64px!important;
+        padding: 32px 64px !important;
 
         >p {
-            width: 100%!important;
-            font-size: 14px!important;
+            width: 100% !important;
+            font-size: 14px !important;
         }
     }
 }
 
 @media (max-width: 750px) {
     .service-section {
-        flex-direction: column-reverse!important;
+        flex-direction: column-reverse !important;
+        align-items: center;
     }
 
     .text-content {
-        width: 100%!important;
+        width: 100% !important;
 
         >h1 {
-            font-size: 24px!important;
+            font-size: 24px !important;
         }
 
         li {
             span:last-child {
-                font-size: 14px!important;
+                font-size: 14px !important;
             }
         }
     }
