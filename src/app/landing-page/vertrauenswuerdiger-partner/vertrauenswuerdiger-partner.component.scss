@@ -21,6 +21,10 @@ img {
     justify-content: space-between;
     align-items: flex-start;
     background: #f0f0f0;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 }
 
 p {
@@ -103,6 +107,13 @@ h1 {
     .button-17 {
         width: 100%;
         margin-top: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    .text-content{
+        width: -webkit-fill-available!important;
+        padding-right: 64px!important;
     }
 }
 

@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   @Input() title: string = 'Über Uns - Heister Solartechnik GmbH';
   @Input() whiteSpace: string = 'nowrap'; 
   @Input() textOverflow: string = 'ellipsis'; 
-  @Input() customImage: string = 'assets/header.jpg';
+  @Input() customImage: string = 'assets/mehrgecropped.jpg';
   @Input() showSpacer: boolean = true;
 
   constructor(private renderer: Renderer2) { }

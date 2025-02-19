@@ -10,6 +10,10 @@
         </div>
         <div class="faq-answer" [class.open]="activeIndex.allgemeine === i">
           <p>{{ question.answer }}</p>
+          <p *ngIf="question.question === 'Wie stark beeinflusst die Ausrichtung und Neigung meines Daches das Potenzial/die Effizienz meiner Anlage?'">
+            Weitere Informationen finden Sie im 
+            <a [href]="'assets/faq/ausrichtung-und-ertrag.pdf'" target="_blank">PDF Anhang</a>.
+          </p>
         </div>
       </div>
     </div>

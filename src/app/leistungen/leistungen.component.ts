@@ -1,10 +1,12 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { HeaderComponent } from "../shared/header/header.component";
 import { VorgehensweiseComponent } from "./vorgehensweise/vorgehensweise.component";
 import { BeratungComponent } from "./beratung/beratung.component";
 import { ActivatedRoute } from '@angular/router';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-leistungen',
@@ -19,10 +21,12 @@ export class LeistungenComponent implements AfterViewInit {
 
   constructor(
     private sanitizer: DomSanitizer,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private renderer: Renderer2
   ) { }
 
   ngAfterViewInit() {
+    AOS.refresh();
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -62,7 +66,7 @@ export class LeistungenComponent implements AfterViewInit {
       "<strong>Rentabilitätsberechnung:</strong> Wir zeigen Ihnen transparent auf, wie sich Ihre Investition in eine Photovoltaikanlage finanziell für Sie auszahlt.",
       "<strong>Überwachungssysteme:</strong> Mit unseren modernen Apps und Web-Oberflächen behalten Sie stets den Überblick über die Leistung Ihrer Anlage und können den Eigenverbrauch optimal steuern."
     ],
-    "imageUrl": "./assets/leistungen/01sp.jpg",
+    "imageUrl": "./assets/leistungen/Photovoltaik.jpeg",
     "svg": `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet">
             <defs>
               <clipPath id="__lottie_element_13">
@@ -91,7 +95,7 @@ export class LeistungenComponent implements AfterViewInit {
       "<strong>Optimierung des Eigenverbrauchs:</strong> Mit unseren Batteriespeichersystemen nutzen Sie die Energie Ihrer Photovoltaikanlage auch dann, wenn die Sonne nicht scheint.",
       "<strong>Individuelle Beratung:</strong> Wir helfen Ihnen, die passende Batteriegröße und -technologie für Ihre Bedürfnisse zu finden."
     ],
-    "imageUrl": "./assets/leistungen/man-worker-firld-by-solar-panels1.jpg",
+    "imageUrl": "./assets/leistungen/Energiespeicher.jpg",
     "svg": `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet">
             <defs>
               <clipPath id="__lottie_element_13">

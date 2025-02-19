@@ -28,12 +28,17 @@ p {
     gap: 64px;
     padding: 32px 0;
 
+    div:nth-child(2) {
+
+        p:first-child {
+            margin-top: 0;
+        }
+    }
+
     img {
         width: 50%;
-        height: 390px;
         object-fit: cover;
         object-position: center right;
-        transform: scaleX(-1);
     }
 
     button {

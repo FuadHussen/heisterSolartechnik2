@@ -12,7 +12,6 @@ $secondary-bg-color: #F0F0F0;
     background-color: $primary-bg-color;
     padding: 64px 124px;
     position: relative;
-    align-items: flex-start;
     gap: 16px;
 
     &.reverse {
@@ -74,7 +73,7 @@ $secondary-bg-color: #F0F0F0;
         &:last-child {
 
             img {
-                width: 438px;
+                width: 529px;
                 height: auto;
                 max-width: 100%;
             }
@@ -88,6 +87,13 @@ $secondary-bg-color: #F0F0F0;
         font-weight: 600;
         color: #E9E9E98C;
         pointer-events: none;
+    }
+}
+
+#image-2 {
+
+    img {
+        width: 330px;
     }
 }
 
@@ -124,15 +130,12 @@ li.visible {
     &[data-number="01"]::before,
     &[data-number="03"]::before,
     &[data-number="05"]::before {
-        left: -50%;
+        left: -25%;
         top: 20%;
     }
 
     &[data-number="02"]::before,
-    &[data-number="04"]::before {
-        left: 50%;
-    }
-
+    &[data-number="04"]::before,
     &[data-number="06"]::before {
         left: 50%;
     }
